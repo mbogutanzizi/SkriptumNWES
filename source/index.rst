@@ -3,17 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to NWES - Netzwerke und Embeddes Software's documentation!
-==================================================================
+NWES - Netzwerke und Embedded Software
+======================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Digitaltechnik
+
+   digitaltechnik/index
 
 
 
-Indices and tables
-==================
+Tabellen
+========
 
 * :ref:`genindex`
 * :ref:`modindex`
