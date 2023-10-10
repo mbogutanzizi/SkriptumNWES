@@ -74,15 +74,15 @@ Beim Beispiel mit den 10er-Bündeln, sieht es wie folgt aus:
 
 :math:`(2 \times 10) + (6 \times 1) = 26`
 
-Wie funktioniert nun ein Zahlensystem?
-**************************************
+Wie funktioniert nun also ein Zahlensystem?
+*******************************************
 
 Man kann also, wie in unseren Beispielen ersichtlich, die gleiche Anzahl an Punkten auf verschiedene Art und Weise, bzw. in verschiedenen Zahlensystemen darstellen.
 
 .. Ein Zahlensystem ist durch sogenannte **Nennwerte** definiert. Diese stellen die Menge der **möglichen Symbole pro Stelle** dar. Die Anzahl der Nennwerte wird **Basis** genannt. Da wir die :math:`0` (Null) auch mitzählen, ist der größte Nennwert :math:`Basis - 1`.
 
 
-Dazu ein Beispiel, wieder mit unseren Punkten:
+Dazu ein Beispiel, wieder mit unseren Punkten und 10er-Bündeln:
 
 .. figure:: images/numbersystems-04.*
 
@@ -104,6 +104,8 @@ Wird nun die Anzahl der Punkte erhöht, passiert folgendes:
 
 Man sieht, dass beim Schritt von :math:`29` auf :math:`30` die Anzahl der Zehner(=10er-Bündel) um :math:`1` erhöht wird, und die Anzahl der Einer (einzelne Punkte) wieder auf :math:`0` gesetzt wird, was in der Grafik auch klar erkennbar ist.
 
+Basis und Nennwerte
+===================
 
 Da in unserem Beispiel nun die Größe der Bündel :math:`10` ist, kann die Anzahl der einzelnen Punkte nur von :math:`0` bis :math:`9` reichen, da ja ab 10 Punkten ein neues Bündel gezählt wird.
 
@@ -148,9 +150,15 @@ Allgemein werden die Wertigkeiten wie folgt gebildet:
 	   Stelle 3, Stelle 2, Stelle 1, Stelle 0
 	   :math:`t \times Basis ^{3}`,:math:`h \times Basis ^{2}`,:math:`z \times Basis ^{1}`, :math:`e \times Basis ^{0}`
 
+Der Wert der Zahl wird dann durch **Aufsummieren der Produkte der Stellen und Wertigkeiten** gebildet:
+
+:math:`Wert = ..... + s3 \times Basis^{3} + s2 \times Basis^{2} + s1 \times Basis^{1} + s0 \times Basis^{0}`
+      
 Um zu verdeutlichen, im welchem Stellenwertsystem man nun eine Zahl ausdrückt, benutzt man einen Index, der die Basis angibt:
 
-:math:`51_{5} = 26_{10}`.
+:math:`51_{5} = 26_{10}`. Mit dem Wissen über Basis und Nennwerte kann das auch wie folgt angeschrieben werden:
+
+:math:`51_{5}= 5 \times 5^{1} + 1 \times 5^{0} = 5 \times 5 + 1 \times 1 = 26_{10}`.
 
 :math:`51_{5}` ist also ein Stellenwertsystem mit der **Basis 5** (das erste Beispiel mit den 5er-Bündeln) und entspricht :math:`26_{10}` im **10er-Bündel-System** das auch **Dezimalsystem** genannt wird.
 
@@ -166,7 +174,7 @@ Binärsystem
 t.b.d
 
 Hexadezimalsystem
-=================
+*****************
 
 
 *********************************
