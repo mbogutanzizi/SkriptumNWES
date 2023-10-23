@@ -23,5 +23,5 @@ help:
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-publish: clean html
-	lftp -c "set ftp:list-options -a; set ssl:verify-certificate no; open --user "$(USERNAME)" --password "$(PASSWORD)" ftp://lehrer.bulme.at/public_html; lcd build/html; cd NWES/skript; mirror --reverse --delete --verbose"
+publish: html
+	lftp -c "set ftp:list-options -a; set ssl:verify-certificate no; open --user "$(USERNAME)" --password "$(PASSWORD)" ftp://lehrer.bulme.at/public_html; lcd build/html; cd NWES/skript; mirror -n --reverse --delete --verbose"
