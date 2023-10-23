@@ -13,4 +13,4 @@ jobs:
       with:
         pre-build-command: "cat Makefile; ls -l"
         build-command: "sphinx-build -b html . _build"
-        docs-folder: "/"
+        docs-folder: "."
