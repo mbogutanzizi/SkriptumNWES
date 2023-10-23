@@ -4,6 +4,8 @@ Zahlensysteme
 
 https://gist.github.com/SMotaal/24006b13b354e6edad0c486749171a70#file-gh-markup-rst-rst
 
+https://docutils.sourceforge.io/docs/ref/rst/directives.html#table-of-contents
+
 Zahlensysteme werden benötigt, um Werte bzw. Wertigkeiten darstellen zu können.
 Die Darstellung der Zahlen, als Folgen von Ziffern mit verschiedenen Wertigkeiten, folgt bestimmten Regeln, die vom verwendeten Zahlensystem abhängig sind.
 
@@ -136,11 +138,20 @@ Werden nun mehr Stellen benötigt, folgen diese dem Schema:
 .. csv-table:: 
    :quote: "
 	   
-	   Stelle 3, Stelle 2, Stelle 1, Stelle 0
+	   **Stelle 3**,**Stelle 2**,**Stelle 1**, **Stelle 0**
+	   (Tausender),(Hunderter),(Zehner/Bündel),(Einer/Punkte)
+	   :math:`t \times ( 10 \times 10 \times 10)`,:math:`h \times (10 \times 10)`,:math:`z \times 10`, :math:`e \times 1`
+		
+oder systematischer  notiert:
+
+.. csv-table:: 
+   :quote: "
+	   
+	   **Stelle 3**,**Stelle 2**,**Stelle 1**, **Stelle 0**
 	   (Tausender),(Hunderter),(Zehner/Bündel),(Einer/Punkte)
 	   :math:`t \times 10^{3}`,:math:`h \times 10^{2}`,:math:`z \times 10^{1}`, :math:`e \times 10^{0}`
 
-Man erkennt, das die jeweilige Stelle (**von** :math:`\boldsymbol{0}` **weg gezählt!**) immer die Wertigkeit  :math:`10^{Stelle}` hat. Dies ist in unserem Beispiel so, da die **Basis 10** ist, muss aber nicht zwingend immer so sein.
+Die jeweilige Stelle hat in unserem Fall immer die **10-fache** Wertigkeit (da hier Basis :math:`10`) der Stelle rechts davon! Weiters sieht man, dass die jeweilige Stelle (**von** :math:`\boldsymbol{0}` **weg gezählt!**) immer die Wertigkeit  :math:`10^{Stelle}` hat. Dies ist in unserem Beispiel so, da die **Basis 10** ist, muss aber nicht zwingend immer so sein.
 
 Allgemein werden die Wertigkeiten wie folgt gebildet:
 
@@ -150,13 +161,19 @@ Allgemein werden die Wertigkeiten wie folgt gebildet:
 	   Stelle 3, Stelle 2, Stelle 1, Stelle 0
 	   :math:`t \times Basis ^{3}`,:math:`h \times Basis ^{2}`,:math:`z \times Basis ^{1}`, :math:`e \times Basis ^{0}`
 
+Dadurch ist es jederzeit möglich, eine andere Basis (als die uns gewohnte :math:`10`) zu verwenden!
+		 
 Der Wert der Zahl wird dann durch **Aufsummieren der Produkte der Stellen und Wertigkeiten** gebildet:
 
 :math:`Wert = ..... + s3 \times Basis^{3} + s2 \times Basis^{2} + s1 \times Basis^{1} + s0 \times Basis^{0}`
       
-Um zu verdeutlichen, im welchem Stellenwertsystem man nun eine Zahl ausdrückt, benutzt man einen Index, der die Basis angibt:
+Um zu verdeutlichen, im **welchem Stellenwertsystem** man nun eine Zahl ausdrückt, benutzt man einen Index (tiefgestellte Zahl), der die Basis angibt:
 
-:math:`51_{5} = 26_{10}`. Mit dem Wissen über Basis und Nennwerte kann das auch wie folgt angeschrieben werden:
+.. class:: asdajsdajdasdjaajd_asdfghgfd_sdf
+
+   :math:`51_{5} = 26_{10}`.
+
+Mit dem Wissen über Basis und Nennwerte kann das auch wie folgt angeschrieben werden:
 
 :math:`51_{5}= 5 \times 5^{1} + 1 \times 5^{0} = 5 \times 5 + 1 \times 1 = 26_{10}`.
 
@@ -165,8 +182,9 @@ Um zu verdeutlichen, im welchem Stellenwertsystem man nun eine Zahl ausdrückt, 
 Dezimalsystem
 *************
 
+t.b.d
 
-
+∧ ∨
       
 Binärsystem
 ***********
