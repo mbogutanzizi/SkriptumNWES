@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - uses: ammaraskar/sphinx-action@master
       with:
-        pre-build-command: "ls -l"
+        pre-build-command: "cat Makefile; ls -l"
         docs-folder: "/"
