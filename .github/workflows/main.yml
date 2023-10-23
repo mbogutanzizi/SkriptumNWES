@@ -12,5 +12,5 @@ jobs:
     - uses: ammaraskar/sphinx-action@master
       with:
         pre-build-command: "cat Makefile; ls -l"
-        build-command: "sphinx-build -b html . _build"
+        build-command: "sphinx-build -b html . _build -c ./source"
         docs-folder: "."
