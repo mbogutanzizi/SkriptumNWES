@@ -12,5 +12,5 @@ jobs:
     - uses: ammaraskar/sphinx-action@master
       with:
         pre-build-command: "cat Makefile; ls -l; pip install sphinx_rtd_theme; cd source"
-        build-command: "sphinx-build -b html . ../_build"
+        build-command: "sphinx-build -b html . ../_build -vv"
         docs-folder: "."
