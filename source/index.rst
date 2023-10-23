@@ -6,7 +6,9 @@
 NWES - Netzwerke und Embedded Software
 ======================================
 
+.. sectnum::
 .. toctree::
+   :numbered:
    :maxdepth: 2
    :caption: Digitaltechnik
 
