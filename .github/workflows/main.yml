@@ -2,7 +2,7 @@ name: "Build Sphinx docs"
 on:
   push:
     branches:
-      - main
+      - main_disabled
 
 jobs:
   docs:
