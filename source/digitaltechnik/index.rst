@@ -10,5 +10,6 @@ Um die Grundlagen zu verstehen, ....
    :caption: Inhalt:
 
    zahlensysteme
+   bool
    logik
 	     
